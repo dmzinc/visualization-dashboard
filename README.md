@@ -8,7 +8,7 @@ This project analyzes and visualizes student performance data across different d
 visualization-dashboard/
 ├── StudentsPerformance.csv    # Dataset containing student performance data
 ├── visualization_analysis.py  # Main analysis script
-├── environment.yaml          # Conda environment configuration
+├── env.yaml          # Conda environment configuration
 └── README.md                 # This file
 ```
 
