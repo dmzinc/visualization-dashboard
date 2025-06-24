@@ -1,19 +1,10 @@
-"""
-Student Performance Visualization Dashboard
-Author: [Your Name]
-Date: [Insert Date]
-Version: 1.0
-
-This script loads and analyzes student performance data, generating visualizations as per the PRD.
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-# Set style and color palette (Tableau 20, colorblind-friendly)
+# Set style and color palette
 tableau20 = [
     (31, 119, 180), (174, 199, 232), (255, 127, 14), (255, 187, 120),
     (44, 160, 44), (152, 223, 138), (214, 39, 40), (255, 152, 150),
@@ -35,13 +26,13 @@ plt.rcParams['grid.linestyle'] = '--'
 plt.rcParams['grid.linewidth'] = 0.5
 plt.rcParams['figure.dpi'] = 120
 
-# Output directory for images
+
 os.makedirs('figures', exist_ok=True)
 
 # 1. Data Loading and Cleaning
-# ---------------------------
+
 df = pd.read_csv('StudentsPerformance.csv')
-# (Add any cleaning steps here if needed)
+
 
 # 2. Summary Statistics
 # ---------------------
@@ -149,11 +140,3 @@ barchart_avg_scores_by_race(df)
 histograms_scores(df)
 correlation_heatmap(df)
 grouped_barchart_testprep_by_gender(df)
-
-# 4. Key Insights (to be filled in after analysis)
-# ------------------------------------------------
-# Write your key insights here as Markdown comments or export to a PDF after analysis.
-# Example:
-# - Female students scored higher on average in reading and writing.
-# - Test preparation course had a positive effect on all scores.
-# - [Add more insights after reviewing the visualizations] 
