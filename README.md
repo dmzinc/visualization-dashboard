@@ -1,3 +1,9 @@
+# Student Performance Analysis Dashboard
+
+**Project by Dataninjas Group**
+
+This project provides a comprehensive analysis of student performance using both Python and Power BI. We explored student scores across demographic and educational factors, uncovering trends and disparities with a combination of automated Python visualizations and interactive Power BI dashboards. The analysis covers gender, race/ethnicity, parental education, lunch type, test preparation, and subject scores, delivering actionable insights for educators and stakeholders.
+
 ## Running the Analysis and Generating the Report
 
 ### 1. Set Up the Environment
